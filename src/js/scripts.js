@@ -42,7 +42,8 @@ input.addEventListener('keydown', e => {
 // ========== PERGUNTAS/RESPOSTAS  ========== //
 const answerElement = document.querySelector('.answer')
 const inputElement = document.querySelector('input')
-const button = document.querySelector('button')
+const button = document.querySelector('.button')
+
 
 const answers = [
   'Cacildis, brilhantis.',
@@ -82,8 +83,28 @@ const answers = [
   'Não sou capaz de opinar',
   'Com certeza!',
   'Se concentre, pergunte novamente',
-  'Não sou obrigado a responder'
+  'Não sou obrigado a responder',
+  'Certeza!',
+  'Não tenho tanta certeza.',
+  'É decididamente assim.',
+  'Não conte com isso.',
+  'Sem dúvidas!',
+  'Pergunte novamente mais tarde.',
+  'Sim, definitivamente!',
+  'Minha resposta é não.',
+  'Você pode contar com isso.',
+  'Melhor não te dizer agora.',
+  'A meu ver, sim.',
+  'Minhas fontes dizem não.',
+  'Provavelmente.',
+  'Não é possível prever agora.',
+  'Perspectiva boa.',
+  'As perspectivas não são tão boas.',
+  'Sim.',
+  'Concentre-se e pergunte novamente.',
+  'Sinais apontam que sim.'
 ]
+
 
 function Question() {
   const inputValor = inputElement.value
@@ -91,8 +112,13 @@ function Question() {
   if (inputValor.length > 0) {
     const answer = answers[Math.floor(Math.random() * answers.length)]
     answerElement.innerHTML = answer
-    divElement.classList.add('answer-show')
-  }
+    divElement.classList.add('answer')
+  } else {
+    answerElement.innerHTML = 'Digite algo, por favor.'
+    divElement.classList.add('answer')
+  } 
+  
 }
 
 button.addEventListener('click', Question)
+
