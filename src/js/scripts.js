@@ -24,7 +24,6 @@ function castParallax() {
 document.body.onload = castParallax()
 
 
-
 //  ========== CIRCLE ANIMATION ========== //
 const input = document.querySelector('input')
 let timeout = null
@@ -38,13 +37,13 @@ input.addEventListener('keydown', e => {
 })
 
 
-
 // ========== PERGUNTAS/RESPOSTAS  ========== //
 const answerElement = document.querySelector('.answer')
 const inputElement = document.querySelector('input')
 const button = document.querySelector('.button')
 
 
+// ========== RESPOSTAS GERADAS DE FORMA AUTOMATICA ========== //
 const answers = [
   'Cacildis, brilhantis.',
   'Repensar você deve, jovem padawan.',
@@ -102,7 +101,27 @@ const answers = [
   'As perspectivas não são tão boas.',
   'Sim.',
   'Concentre-se e pergunte novamente.',
+  'Não sei responder. Pergunte novamente mais tarde.',
+  'Não sei se sim ou não, mas não sei. ',
+  'Não entendi a pergunta, tente novamente.',
   'Sinais apontam que sim.'
+]
+
+
+// ========== CASO NÃO TENHA CONTEÚDO NO INPUT DE PERGUNTA ========== //
+const answersWhite = [
+  'Não sei responder. Você não me perguntou nada.',
+  'Não sei se sim ou não. Só pergunte logo.',
+  'Digite algo, por favor.',
+  'Você não pode me perguntar isso, pois a caixa de pergunta está vazia.',
+  'Você não perguntou nada.',
+  'A caixa de pergunta está em branco.',
+  'É serio você precisa digitar algo.',
+  'Ok... Você só pode estar de brincadeira.',
+  'Desisto de você.',
+  'Não precisa me perguntar mais nada.',
+  'Você não me perguntou nada, como quer uma resposta.',
+  'Você não me perguntou nada, eu não sei o que está pensando.'
 ]
 
 
@@ -114,11 +133,10 @@ function Question() {
     answerElement.innerHTML = answer
     divElement.classList.add('answer')
   } else {
-    answerElement.innerHTML = 'Digite algo, por favor.'
+    const answer = answersWhite[Math.floor(Math.random() * answersWhite.length)]
+    answerElement.innerHTML = answer
     divElement.classList.add('answer')
   } 
-  
 }
 
 button.addEventListener('click', Question)
-
