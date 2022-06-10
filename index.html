@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <link rel="stylesheet" href="src/styles/style.css" />
+    <title>Maratona Explorer</title>
+    <link rel="icon" href="src/images/logo.png">
+  </head>
+  <body>
+    <section class="content">
+      <div class="keyart" id="parallax">
+        <div class="keyart_layer parallax" id="keyart-0" data-speed="2"></div>
+        <div class="keyart_layer parallax" id="keyart-1" data-speed="5"></div>
+        <div class="keyart_layer parallax" id="keyart-2" data-speed="10"></div>
+        <div class="keyart_layer parallax" id="keyart-3" data-speed="16"></div>
+        <div class="keyart_layer parallax" id="keyart-4" data-speed="26"></div>
+        <div class="keyart_layer parallax" id="keyart-5" data-speed="36"></div>
+        <div class="keyart_layer parallax" id="keyart-6" data-speed="49"></div>
+        <div class="keyart_layer" id="keyart-scrim"></div>
+        <div class="keyart_layer parallax" id="keyart-7" data-speed="69"></div>
+        <div class="keyart_layer" id="keyart-8" data-speed="100"></div>
+        <div><i class="uil uil-github github"></i></div>
+      </div>
+      <div class="form">
+        <div id="circle">
+          <div class="inner-circle"></div>
+        </div>
+        <h1>Vou revelar o seu <span>destino!</span></h1>
+        <p>Clique em fazer pergunta para que seu destino seja revelado.</p>
+        <input type="text" placeholder="Digite sua pergunta" />
+        <button class="button">Fazer pergunta</button>
+
+        <div id="interaction" class="hide">
+          <p class="answer"></p>
+        </div>
+      </div>
+    </section>
+
+    <script src="src/js/scripts.js"></script>
+  </body>
+</html>
