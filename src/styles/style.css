@@ -86,7 +86,6 @@ html{
     font-size: 3.5rem;
     z-index: 40;
     color: white;
-    cursor: pointer;
   }
 
   .github:hover{
