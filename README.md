@@ -2,7 +2,7 @@
   Revelador de destinos 🧙‍♂️
 </h1>
 
-![Resultado final do projeto]()
+![Resultado final do projeto](https://revelar-destino.vercel.app/src/images/revelar-destino.png)
 
 <br>
 
