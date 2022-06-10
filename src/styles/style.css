@@ -149,7 +149,8 @@ html{
     margin: .5rem 0;
     font-size: 1rem;
     padding: 1rem;
-    color: black;
+    background: #ffffff;
+    color: #000000;
     font-weight: 700;
     font-size: 1rem;
   }
