@@ -173,16 +173,6 @@ html{
     color: #ffaf00;
   }
 
-@media (max-width: 350px) {
-  .form h1{
-    font-size: 1.5rem;
-  }
-
-  .form p{
-    font-size: 1rem;
-  }
-}
-
 @media (min-width: 768px) {
   #parallax {
     display: block;
